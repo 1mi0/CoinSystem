@@ -1,13 +1,13 @@
 # WHAT SHOULD EVERY SINGLE SCRIPTER DO: 
-## Programmer Friendly
-### Info: What Should We Do To Keep Our Code Readable
+## Scripter Friendly
+### Info: What We Should Do To Keep Our Code Readable
 ### Working: All of Us
 ### To Do:
 #### Using Readable and Understandable Variable And Function Names
 #### Making Comments
 
 ## Server Friendly
-### Info: What Should We Do To Keep Our Code Fast
+### Info: What We Should Do To Keep Our Code Fast
 ### Working: All of Us
 ### To Do:
 #### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include cstrike")
