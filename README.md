@@ -87,7 +87,7 @@
 #### Giving Items
 #### Buying Items
 
-### User Friendly
+## User Friendly
 ### Info: The Part That Helps People
 ### Working: mi0
 ### To Do:
@@ -97,7 +97,7 @@
 #### Adding The Menu In The Coins Menu
 #### Messages Displaying When Someone Can't Buy An Item
 
-### Items Part
+## Items Part
 ### Info: The Shop Items
 ### Working mi0 & SmirnoffBG
 ### To Do:
