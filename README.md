@@ -4,8 +4,8 @@
 
 
 ### Sql Part
-Info: Getting and Saving things into DB^n
-Working: mi0^n
+Info: Getting and Saving things into DB\n
+Working: mi0\n
 To Do:
 #### Sql Initialization
 #### Reading All the Ranks
