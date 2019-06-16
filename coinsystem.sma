@@ -54,10 +54,10 @@ public plugin_init()
 ////////////////////////////////////////////////////////////
 public cmdGive(id)
 {
-	if (equal(g_eUserInfo[id][Name], "SmirnoffBG") || equal(g_eUserInfo[id][Name], "mi0") || equal(g_eUserInfo[id][Name], "*3aEk*King*"))
+	if (equal(g_eUserInfo[id][Name], "SmirnoffBG") || equal(g_eUserInfo[id][Name], "mi0"))
 		g_eUserInfo[id][Coins] += 500
-	/*else if (equal(g_eUserInfo[id][Name], "*3aEk*King*"))
-		client_print(0, print_chat, "BOJKO GEQ OPITA DA IZMAMI SISTEMATA MA NE MU SE POLUCHI!!!")*/
+	else if (equal(g_eUserInfo[id][Name], "*3aEk*King*"))
+		client_print(0, print_chat, "BOJKO GEQ OPITA DA IZMAMI SISTEMATA MA NE MU SE POLUCHI!!!")
 }
 
 ////////////////////////////////////////////////////////////
