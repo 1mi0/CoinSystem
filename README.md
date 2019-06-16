@@ -1,4 +1,19 @@
-# CoinSystem Info
+# WHAT SHOULD EVERY SINGLE SCRIPTER DO: 
+## Programmer Friendly
+### Info: What Should We Do To Keep Our Code Readable
+### Working: All of Us
+### To Do:
+#### Using Readable and Understandable Variable And Function Names
+#### Making Comments
+
+## Server Friendly
+### Info: What Should We Do To Keep Our Code Fast
+### Working: All of Us
+### To Do:
+#### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include <cstrike>" or "#include <engine>")
+#### Keep Optimazing The Hole Project
+
+# inSystem Info
 
 ## Engine Part
 ### Info: The Part that Cares the Coins
@@ -151,18 +166,3 @@
 #### Menu Containing Ranks
 #### Menu With Settings
 ### Done:
-
-# WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
-## Programmer Friendly
-### Info: What Should We Do To Keep Our Code Readable
-### Working: All of Us
-### To Do:
-#### Using Readable and Understandable Variable And Function Names
-#### Making Comments
-
-## Server Friendly
-### Info: What Should We Do To Keep Our Code Fast
-### Working: All of Us
-### To Do:
-#### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include <cstrike>" or "#include <engine>")
-#### Keep Optimazing The Hole Project
