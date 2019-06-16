@@ -3,8 +3,10 @@
 ## Plan for Making the Rank System
 
 
-### Sql Part - mi0
-Getting and Saving things into DB
+### Sql Part
+Info: Getting and Saving things into DB
+Working: mi0
+To Do:
 #### Sql Initialization
 #### Reading All the Ranks
 #### Adding New Ranks
@@ -15,8 +17,10 @@ Getting and Saving things into DB
 #### Adding Users' Ranks
 
 
-### Command Part - mi0
-Controlling The DB
+### Command Part
+Info: Controlling The DB
+Working: mi0
+To Do:
 #### Reloading the Ranks
 #### Adding New Ranks
 #### Editing Ranks
@@ -26,8 +30,10 @@ Controlling The DB
 #### Adding Users' Ranks
 
 
-### User Friendly - SmirnoffBG
-The Part That Helps People
+### User Friendly
+Info: The Part That Helps People
+Working: SmirnoffBG
+To Do:
 #### Messages Informing the Users about The Rank
 #### MOTD with All the Info
 #### Menu for Switching between Ranks
