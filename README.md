@@ -10,7 +10,7 @@
 ### Info: What Should We Do To Keep Our Code Fast
 ### Working: All of Us
 ### To Do:
-#### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include <cstrike>" or "#include <engine>")
+#### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include cstrike")
 #### Keep Optimazing The Hole Project
 
 # CoinSystem Info
