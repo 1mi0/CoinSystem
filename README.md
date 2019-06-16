@@ -2,6 +2,7 @@
 
 ## Plan for Making the Rank System
 
+
 ### Sql Part - mi0
 Getting and Saving things into DB
 #### Sql Initialization
@@ -13,6 +14,7 @@ Getting and Saving things into DB
 #### Getting Users' Ranks
 #### Adding Users' Ranks
 
+
 ### Command Part - mi0
 Controlling The DB
 #### Reloading the Ranks
@@ -22,6 +24,7 @@ Controlling The DB
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
+
 
 ### User Friendly - SmirnoffBG
 The Part That Helps People
