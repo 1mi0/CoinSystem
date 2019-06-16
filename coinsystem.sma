@@ -2,7 +2,7 @@
 #include <hamsandwich>
 #include <reapi>
 #include <coinsys_sql>
-
+//test
 #define PLUGIN "Coin System: Main"
 #define VERSION "0.2"
 #define AUTHOR "SmirnoffBG & mi0"
