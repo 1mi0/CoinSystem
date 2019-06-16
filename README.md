@@ -12,6 +12,7 @@
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
+### Done:
 
 ## Command Part
 ### Info: Controlling The DB
@@ -24,6 +25,7 @@
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
+### Done:
 
 ### User Friendly
 ### Info: The Part That Helps People
@@ -34,3 +36,4 @@
 #### Menu for Switching between Ranks
 #### Menu Containing Ranks
 #### Menu With Settings
+### Done:
