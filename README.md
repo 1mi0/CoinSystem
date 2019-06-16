@@ -4,6 +4,7 @@
 ### Info: The Part that Cares the Coins
 ### Working: mi0 & SmirnoffBG
 ### To Do:
+#### Forwards - mi0
 ### Done:
 #### Droping Coins - SmirnoffBG
 #### Picking Coins Up - SmirnoffBG
@@ -24,7 +25,7 @@
 #### Saving Coins
 
 ## Command Part
-### Info: Controlling The DB
+### Info: Controlling The DB and The Engine
 ### Working: mi0
 ### To Do:
 ### Done:
@@ -36,7 +37,7 @@
 #### Deposit
 #### Donate
 
-### User Friendly
+## User Friendly
 ### Info: The Part That Helps People
 ### Working: SmirnoffBG
 ### To Do:
@@ -55,6 +56,61 @@
 #### No Afk Droping - mi0
 #### Timer for the Sql - mi0
 #### Removing the Coins - mi0
+
+## Addon Plugins
+### Info: Just Some Addons
+### Working: SmirnoffBG
+### To Do:
+### Done:
+#### Money Replacement - SmirnoffBG
+
+# Shop Info
+
+## Engine Part
+### Info: The whole Movement
+### Working: mi0
+### To Do:
+### Done:
+#### Adding Items
+#### Alive Only
+#### Admins Only
+#### Limit
+#### Natives
+#### Forwards
+
+## Command Part
+### Info: Working with the Engine
+### Working: mi0
+### To Do:
+### Done:
+#### Menu
+#### Giving Items
+#### Buying Items
+
+### User Friendly
+### Info: The Part That Helps People
+### Working: mi0
+### To Do:
+#### Messages Informing Users About the Rank
+### Done:
+#### Messages Telling The Item Information
+#### Adding The Menu In The Coins Menu
+#### Messages Displaying When Someone Can't Buy An Item
+
+### Items Part
+### Info: The Shop Items
+### Working mi0 & SmirnoffBG
+### To Do:
+### Done:
+#### Auto BunnyHop - mi0
+#### Fake Destroy - mi0
+#### GodMode - mi0
+#### Grenades - mi0
+#### Health - mi0
+#### Punch Grenade - SmirnoffBG(edit by mi0)
+#### Slap - mi0
+#### Speed - mi0
+#### Teleport Grenade - mi0
 
 # RankSystem Info
 
