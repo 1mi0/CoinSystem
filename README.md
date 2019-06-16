@@ -151,3 +151,11 @@
 #### Menu Containing Ranks
 #### Menu With Settings
 ### Done:
+
+# Programer Friendly
+## WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
+### Info: What Should We Do To Keep Our Code Readable
+### Working: All of us
+### To Do:
+#### Using Readable and Understandable Variable Names
+#### Making Comments
