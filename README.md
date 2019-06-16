@@ -1,4 +1,17 @@
-# RankSystem
+# CoinSystem Info
+
+## Sql Part
+### Info: Getting and Saving things into DB
+### Working: mi0
+### To Do:
+### Done:
+#### Sql Initialization
+#### User Checking
+#### User Registering
+#### Getting Coins From Bank
+#### Saving Coins
+
+# RankSystem Info
 
 ## Sql Part
 ### Info: Getting and Saving things into DB
