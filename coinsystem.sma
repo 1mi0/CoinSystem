@@ -4,7 +4,7 @@
 #include <coinsys_sql>
 
 #define PLUGIN "Coin System: Main"
-#define VERSION "0.1.6"
+#define VERSION "0.2"
 #define AUTHOR "SmirnoffBG & mi0"
 #define MODEL "models/mario_coin.mdl"
 #define ADMIN_VIPA ADMIN_LEVEL_A
