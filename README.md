@@ -67,7 +67,7 @@
 # Shop Info
 
 ## Engine Part
-### Info: The whole Movement
+### Info: The Hole Movement
 ### Working: mi0
 ### To Do:
 ### Done:
@@ -155,7 +155,15 @@
 # Programer Friendly
 ## WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
 ### Info: What Should We Do To Keep Our Code Readable
-### Working: All of us
+### Working: All of Us
 ### To Do:
-#### Using Readable and Understandable Variable Names
+#### Using Readable and Understandable Variable And Function Names
 #### Making Comments
+
+# Server Friendly
+## WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
+### Info: What Should We Do To Keep Our Code Fast
+### Working: All of Us
+### To Do:
+#### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include <cstrike>" or "#include <engine>")
+#### Keep Optimazing The Hole Project
