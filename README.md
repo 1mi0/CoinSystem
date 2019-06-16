@@ -152,16 +152,15 @@
 #### Menu With Settings
 ### Done:
 
-# Programer Friendly
-## WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
+# WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
+## Programmer Friendly
 ### Info: What Should We Do To Keep Our Code Readable
 ### Working: All of Us
 ### To Do:
 #### Using Readable and Understandable Variable And Function Names
 #### Making Comments
 
-# Server Friendly
-## WHAT SHOULD EVERY SINGLE PROGRAMER DO: 
+## Server Friendly
 ### Info: What Should We Do To Keep Our Code Fast
 ### Working: All of Us
 ### To Do:
