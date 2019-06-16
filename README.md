@@ -65,12 +65,12 @@
 
 ## Server Friendly
 ### Info: The Part That Cares About The Server
-### Working: mi0 & SmirnoffBG
+### Working: mi0
 ### To Do:
 ### Done:
-#### No Afk Droping - mi0
-#### Timer for the Sql - mi0
-#### Removing the Coins - mi0
+#### No Afk Droping
+#### Timer for the Sql
+#### Removing the Coins from the Ground
 
 ## Addon Plugins
 ### Info: Just Some Addons
