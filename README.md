@@ -13,7 +13,7 @@
 #### It's Recommended To Use Fast And Official Modules(our code MUSTN'T contain "#include <cstrike>" or "#include <engine>")
 #### Keep Optimazing The Hole Project
 
-# inSystem Info
+# CoinSystem Info
 
 ## Engine Part
 ### Info: The Part that Cares the Coins
