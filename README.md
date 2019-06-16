@@ -106,7 +106,7 @@
 ### Info: The Part That Helps People
 ### Working: mi0
 ### To Do:
-#### Messages Informing Users About the Rank
+#### Messages Informing Users About the Shop
 ### Done:
 #### Messages Telling The Item Information
 #### Adding The Menu In The Coins Menu
