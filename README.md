@@ -116,6 +116,7 @@
 ### Info: The Shop Items
 ### Working mi0 & SmirnoffBG
 ### To Do:
+#### Frost Grenade - mi0
 ### Done:
 #### Auto BunnyHop - mi0
 #### Fake Destroy - mi0
