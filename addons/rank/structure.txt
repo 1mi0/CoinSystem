@@ -1,0 +1,18 @@
+Sql structure
+
+The ranks
+
+rank_id, rank_name, rank_color, rank_info, rank_type, type_addoninfo
+rank_id - custom id
+rank_name - the name used to identify the rank in the menus
+rank_color - the version that contains all the colors and "[]" in it
+rank_info - describing the rank
+rank_type:
+1 - normal buyable rank
+2 - in a specified order
+3 - one person rank
+type_addoninfo - info used with the type
+
+The players
+
+savedata, rank_string

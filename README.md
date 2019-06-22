@@ -134,28 +134,28 @@
 ### Info: Getting and Saving things into DB
 ### Working: mi0
 ### To Do:
-#### Sql Initialization
-#### Reading All the Ranks
-#### Adding New Ranks
 #### Editing Ranks
 #### Adding Users
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
 ### Done:
+#### Sql Initialization
+#### Reading All the Ranks
+#### Adding New Ranks
 
 ## Command Part
 ### Info: Controlling The DB
 ### Working: mi0
 ### To Do:
 #### Reloading the Ranks
-#### Adding New Ranks
 #### Editing Ranks
 #### Adding Users
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
 ### Done:
+#### Adding New Ranks
 
 ### User Friendly
 ### Info: The Part That Helps People

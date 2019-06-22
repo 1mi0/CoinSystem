@@ -5,3 +5,5 @@
 
 native csys_get_user_coins(id)
 native csys_set_user_coins(id, coins)
+
+native csys_get_user_svdata(id, szBuff[], iLen)

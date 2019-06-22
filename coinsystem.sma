@@ -693,6 +693,8 @@ public plugin_natives()
 {
 	register_native("csys_get_user_coins", "_native_get_user_coins")
 	register_native("csys_set_user_coins", "_native_set_user_coins")
+
+	register_native("csys_get_user_svdata", "_native_get_user_svdata")
 }
 
 public _native_get_user_coins()
@@ -701,26 +703,9 @@ public _native_get_user_coins()
 public _native_set_user_coins()
 	g_eUserInfo[get_param(1)][Coins] = get_param(2)
 
+public _native_get_user_svdata()
+	set_string(2, g_eUserInfo[get_param(1)][SaveInfo], get_param(3))
+
 ////////////////////////////////////////////////////////////
 // 				   Things That May Help					  //
 ////////////////////////////////////////////////////////////
-/*WithDrawCoins(id, iCoins)
-{	
-	if (iCoins <= 0)
-	{
-		client_print(id, print_chat, "Try with bigger amount.")
-		return
-	}
-
-	new iSaveRet = SaveCoins(g_eUserInfo[id][SaveInfo], iCoins, 1)
-
-	if (iSaveRet == 0)
-	{
-		client_print(id, print_chat, "You now have enough Coins in your bank.")
-		return
-	}
-
-	g_eUserInfo[id][Coins] += iCoins
-	
-	client_print(id, print_chat, "You now have %i Coins in You.", g_eUserInfo[id][Coins])
-}*/
