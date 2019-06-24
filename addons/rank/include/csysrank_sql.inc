@@ -137,3 +137,51 @@ SqlAddRank(eTempArray[RankInfo])
 	SQL_FreeHandle(iSqlConnection)
 	return true
 }
+
+SqlAddUser(szSaveData[64])
+{
+	new iErrorCode
+	new Handle:iSqlConnection = SQL_Connect(g_iSqlTuple, iErrorCode, g_szError, charsmax(g_szError))
+
+	new szTemp[256]
+	formatex(szTemp, charsmax(szTemp), "INSERT INTO `%s` \
+		(`savedata`, `rank_string`) \
+		VALUES ('%s', ', ');", g_szUsersDB, szSaveData)
+
+	new Handle:iQuery = SQL_PrepareQuery(iSqlConnection, szTemp)
+
+	if (!SQL_Execute(iQuery))
+	{
+		SQL_QueryError(iQuery, g_szSqlError, charsmax(g_szSqlError))
+		log_amx(g_szError)
+		return false
+	}
+
+	SQL_FreeHandle(iQuery)
+	SQL_FreeHandle(iSqlConnection)
+	return true
+}
+
+SqlCheckUser(szSaveData[64])
+{
+	new iErrorCode
+	new Handle:iSqlConnection = SQL_Connect(g_iSqlTuple, iErrorCode, g_szError, charsmax(g_szError))
+
+	new szTemp[256]
+	formatex(szTemp, charsmax(szTemp), "SELECT * FROM `%s` WHERE `savedata` = '%s';", g_szUsersDB, szSaveData)
+
+	new Handle:iQuery = SQL_PrepareQuery(iSqlConnection, szTemp)
+
+	if (!SQL_Execute(iQuery))
+	{
+		SQL_QueryError(iQuery, g_szSqlError, charsmax(g_szSqlError))
+		log_amx(g_szError)
+		return false
+	}
+
+	new bool:bHasAccount = clamp(SQL_NumResults(iQuery), false, true)
+
+	SQL_FreeHandle(iQuery)
+	SQL_FreeHandle(iSqlConnection)
+	return bHasAccount
+}

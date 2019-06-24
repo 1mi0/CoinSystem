@@ -135,7 +135,6 @@
 ### Working: mi0
 ### To Do:
 #### Editing Ranks
-#### Adding Users
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
@@ -143,6 +142,8 @@
 #### Sql Initialization
 #### Reading All the Ranks
 #### Adding New Ranks
+#### Checking Users
+#### Adding Users
 
 ## Command Part
 ### Info: Controlling The DB
@@ -150,12 +151,12 @@
 ### To Do:
 #### Reloading the Ranks
 #### Editing Ranks
-#### Adding Users
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
 ### Done:
 #### Adding New Ranks
+#### Adding Users
 
 ### User Friendly
 ### Info: The Part That Helps People

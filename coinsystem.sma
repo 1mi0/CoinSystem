@@ -695,16 +695,28 @@ public plugin_natives()
 	register_native("csys_set_user_coins", "_native_set_user_coins")
 
 	register_native("csys_get_user_svdata", "_native_get_user_svdata")
+	register_native("csys_user_check_logged", "_native_user_check_logged")
 }
 
 public _native_get_user_coins()
+{
 	return g_eUserInfo[get_param(1)][Coins]
+}
 
 public _native_set_user_coins()
+{
 	g_eUserInfo[get_param(1)][Coins] = get_param(2)
+}
 
 public _native_get_user_svdata()
+{
 	set_string(2, g_eUserInfo[get_param(1)][SaveInfo], get_param(3))
+}
+
+public bool:_native_user_check_logged()
+{
+	return CheckLogged(get_param(1))
+}
 
 ////////////////////////////////////////////////////////////
 // 				   Things That May Help					  //

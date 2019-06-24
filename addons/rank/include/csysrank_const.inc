@@ -23,3 +23,11 @@ new const g_szUsersDB[] = "rank_users"
 
 new Array:g_aRankArray
 new g_iRankIDCount
+
+enum _:UserInfo
+{
+	bool:HasAccount = false,
+	bool:Logged = false
+}
+
+new g_eUserInfo[33][UserInfo]

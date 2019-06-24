@@ -36,3 +36,44 @@ AddRank(szRankName[64], szRankColor[128], szRankInfo[128], iRankType, szAddonInf
 	ArrayPushArray(g_aRankArray, eTempArray)
 	return true
 }
+
+AddUser(id)
+{
+	if(!is_user_connected(id))
+	{
+		return false
+	}
+
+	if(csys_user_check_logged(id) && !g_eUserInfo[id][HasAccount])
+	{
+		new szSaveData[64]
+		csys_get_user_svdata(id, szSaveData, charsmax(szSaveData))
+		if(!SqlAddUser(szSaveData))
+		{
+			return false
+		}
+	}
+
+	g_eUserInfo[id][HasAccount] = true
+	g_eUserInfo[id][Logged] = true
+
+	return true
+}
+
+CheckUser(id)
+{
+	new szSaveData[64], bool:bHasAccount
+
+	csys_get_user_svdata(id, szSaveData, charsmax(szSaveData))
+	g_eUserInfo[id][HasAccount] = SqlCheckUser(szSaveData)
+	CheckLogged(id)
+
+	return g_eUserInfo[id][HasAccount]
+}
+
+CheckLogged(id)
+{
+	g_eUserInfo[id][Logged] = csys_user_check_logged(id)
+
+	return g_eUserInfo[id][Logged]
+}
