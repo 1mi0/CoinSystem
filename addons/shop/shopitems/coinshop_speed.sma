@@ -1,13 +1,12 @@
 #include <amxmodx>
 #include <reapi>
-#include <hamsandwich>
 #include <csysshop>
 
 #define PLUGIN "Coin Shop: Speed"
 #define VERSION "1.0"
 #define AUTHOR "mi0"
 
-new g_iItemId, Float:g_iPlayerSpeed[33]
+new g_iItemId, Float:g_fPlayerSpeed[33]
 
 public plugin_init() 
 {
@@ -23,19 +22,20 @@ public CoinShopItemSelected(id, iItem)
 {
 	if(iItem == g_iItemId)
 	{
-		g_iPlayerSpeed[id] = get_entvar(id, var_maxspeed)
-		g_iPlayerSpeed[id] *= 1.5
-		set_entvar(id, var_maxspeed, g_iPlayerSpeed[id])
+		g_fPlayerSpeed[id] = get_entvar(id, var_maxspeed)
+		g_fPlayerSpeed[id] *= 1.5
+		//client_print(id, print_chat, "%f", g_fPlayerSpeed[id])
+		set_entvar(id, var_maxspeed, g_fPlayerSpeed[id])
 	}
 }
 
 public RG__CBasePlayer_Spawn(id)
 {
-	g_iPlayerSpeed[id] = 0.0
+	g_fPlayerSpeed[id] = 0.0
 }
 
 public OnKnifeSelect(id)
 {
-	if(g_iPlayerSpeed[id] > 0.0)
-    	set_entvar(id, var_maxspeed, g_iPlayerSpeed[id])
+	if(g_fPlayerSpeed[id] > 0.0)
+    	set_entvar(id, var_maxspeed, g_fPlayerSpeed[id])
 }
