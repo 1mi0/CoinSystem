@@ -74,7 +74,7 @@ public MySql_Init()
 	SQL_FreeHandle(iSqlConnection)
 }
 
-public LoadRanks()
+public SqlLoadRanks()
 {
 	new iErrorCode
 	new Handle:iSqlConnection = SQL_Connect(g_iSqlTuple, iErrorCode, g_szError, charsmax(g_szError))
@@ -184,4 +184,29 @@ SqlCheckUser(szSaveData[64])
 	SQL_FreeHandle(iQuery)
 	SQL_FreeHandle(iSqlConnection)
 	return bHasAccount
+}
+
+SqlEditRank(iRankID, eTempArray[RankInfo])
+{
+	new iErrorCode
+	new Handle:iSqlConnection = SQL_Connect(g_iSqlTuple, iErrorCode, g_szError, charsmax(g_szError))
+
+	new szTemp[256]
+	formatex(szTemp, charsmax(szTemp), 
+		"UPDATE %s SET rank_name = '%s', rank_color = '%s', rank_info = '%s', rank_type = '%i' WHERE rank_id = '%i'", 
+		g_szRanksDB, eTempArray[RankName], eTempArray[RankColor], eTempArray[RankInfo], eTempArray[RankType], RankID)
+
+	new Handle:iQuery = SQL_PrepareQuery(iSqlConnection, szTemp)
+
+	if (!SQL_Execute(iQuery))
+	{
+		SQL_QueryError(iQuery, g_szSqlError, charsmax(g_szSqlError))
+		log_amx(g_szError)
+		return false
+	}
+
+	SQL_FreeHandle(iQuery)
+	SQL_FreeHandle(iSqlConnection)
+
+	return true
 }

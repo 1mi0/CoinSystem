@@ -77,3 +77,15 @@ CheckLogged(id)
 
 	return g_eUserInfo[id][Logged]
 }
+
+EditRank(iRankID, eTempArray[RankInfo])
+{
+	if(!SqlEditRank(iRankID, eTempArray))
+	{
+		return false
+	}
+
+	ArraySetArray(g_aRankArray, iRankID, eTempArray)
+
+	return true
+}

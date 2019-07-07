@@ -134,33 +134,44 @@
 ### Info: Getting and Saving things into DB
 ### Working: mi0
 ### To Do:
-#### Editing Ranks
 #### Editing Users
 #### Getting Users' Ranks
-#### Adding Users' Ranks
 ### Done:
 #### Sql Initialization
 #### Reading All the Ranks
 #### Adding New Ranks
 #### Checking Users
 #### Adding Users
+#### Editing Ranks
 
-## Command Part
+## Engine Part
 ### Info: Controlling The DB
 ### Working: mi0
 ### To Do:
 #### Reloading the Ranks
-#### Editing Ranks
 #### Editing Users
 #### Getting Users' Ranks
 #### Adding Users' Ranks
+#### Removing Users' Ranks
 ### Done:
 #### Adding New Ranks
 #### Adding Users
+#### Editing Ranks
+
+## Command Part
+### Info: Admin Friendly
+### Working: mi0
+### To Do:
+#### Adding & Removing & Editing & Reloading Ranks Menu
+#### Editing Users Menu
+#### Buying Ranks
+#### Trading Ranks
+#### Donating Ranks
+#### Done:
 
 ### User Friendly
 ### Info: The Part That Helps People
-### Working: SmirnoffBG
+### Working: mi0
 ### To Do:
 #### Messages Informing Users About the Rank
 #### MOTD with All the Info

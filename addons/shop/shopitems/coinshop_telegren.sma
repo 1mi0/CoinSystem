@@ -1,6 +1,5 @@
 #include <amxmodx>
 #include <reapi>
-#include <csx>
 #include <csysshop>
 
 #define PLUGIN "Coin Shop: TeleGren"
@@ -14,6 +13,7 @@ public plugin_init() {
 
 	RegisterHookChain(RG_CBasePlayer_Killed, "RG__CBasePlayer_Killed")
 	RegisterHookChain(RG_CGrenade_ExplodeSmokeGrenade, "RG__CGrenade_ExplodeSmoke")
+	RegisterHookChain(RG_CBasePlayer_ThrowGrenade, "RG__CBasePlayer_ThrowGrenade")
 
 	g_iItemId = coinsys_shop_register_item("Teleport Granade", "Your smoke granade is now a blink device", 25, 3, 1)
 }
@@ -28,12 +28,18 @@ public CoinShopItemSelected(id, iItem)
 	}
 }
 
-public grenade_throw(id, iEnt, iWep)
+public RG__CBasePlayer_ThrowGrenade(id, iEnt)
 {
-	if(!g_iHasItem[id] || iWep != CSW_SMOKEGRENADE) 
-		return
+	if(!g_iHasItem[id]) 
+		return HC_CONTINUE
+
+	new szClass[32]
+	get_entvar(iEnt, var_classname, szClass)
+
+	if(!equal(szClass, "weapon_smoke"))
+		return HC_CONTINUE
 	
-	new Float:fMin[3], Float:fMax[3]
+	new Float:fMin[3], Float:fMax[3], Float:fOrigin[3]
 	
 	fMin[0] = -16.0
 	fMin[1] = -16.0
@@ -41,9 +47,12 @@ public grenade_throw(id, iEnt, iWep)
 	fMax[0] = 16.0
 	fMax[1] = 16.0
 	fMax[2] = 32.0
+	get_entvar(id, var_origin, fOrigin)
+
 	set_entvar(iEnt, var_mins, fMin)
 	set_entvar(iEnt, var_maxs, fMax)
 	set_entvar(iEnt, var_solid, SOLID_BBOX)
+	set_entvar(iEnt, var_origin, fOrigin)
 
 	SetTouch(iEnt, "GrenTouch")
 }
