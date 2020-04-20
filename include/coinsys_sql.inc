@@ -5,7 +5,7 @@
 
 new const szHost[32] =	"185.148.145.64"
 new const szUser[32] =	"csnation"
-new const szPass[32] =	"I5AxPeEoH1SwUWq9"
+new const szPass[32] =	"************"
 new const szDB[32] =	"csnation"
 
 new const g_szSqlDB[] = "CoinsSystem"
