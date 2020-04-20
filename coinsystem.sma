@@ -35,7 +35,6 @@ public plugin_init()
 	register_clcmd("amx_coinwtd", "cmdWTD")
 	register_clcmd("amx_coindep", "cmdDep")
 	register_clcmd("amx_coindon", "cmdDon")
-	register_clcmd("amx_coingive", "cmdGive")
 	register_clcmd("say /reg", "cmdReg")
 	register_clcmd("amx_coinpass", "cmdSetPass")
 
@@ -47,17 +46,6 @@ public plugin_init()
 	RegisterHam(Ham_Spawn, "player", "Ham_Rajdane", 1)
 
 	set_task(1.0, "MySql_Init")
-}
-
-////////////////////////////////////////////////////////////
-// 					    Debug Stuff    					  //
-////////////////////////////////////////////////////////////
-public cmdGive(id)
-{
-	if (equal(g_eUserInfo[id][Name], "SmirnoffBG") || equal(g_eUserInfo[id][Name], "mi0"))
-		g_eUserInfo[id][Coins] += 500
-	else if (equal(g_eUserInfo[id][Name], "*3aEk*King*"))
-		client_print(0, print_chat, "BOJKO GEQ OPITA DA IZMAMI SISTEMATA MA NE MU SE POLUCHI!!!")
 }
 
 ////////////////////////////////////////////////////////////
