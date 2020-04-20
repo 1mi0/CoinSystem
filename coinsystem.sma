@@ -396,7 +396,7 @@ public cmdSetPass(id)
 	if (!g_eUserInfo[id][Pass][0])
 		return PLUGIN_HANDLED
 	
-	if (3<=strlen(g_eUserInfo[id][Pass])>12)
+	if (3<=strlen(g_eUserInfo[id][Pass])<=12)
 	{
 		client_cmd(id, "messagemode amx_coinpass")
 		client_print_kolor(id, id, "^x04>> Reg >>^x01 Your Password must be between 3 to 12 symbols!")
