@@ -5,10 +5,10 @@
 new g_szBuffer[4096]
 new g_szStyle[] = "<meta charset=UTF-8><style>body{font-family:Arial;}img{margin-bottom:10px;}th{background:#57b9ff;color:#FFF;padding:5px;border-bottom:2px #24a4ff solid;text-align:left}td{padding:3px;border-bottom:1px #8aceff dashed}table{color:#2c75ff;background:#FFF;font-size:12px}h2,h3{color:#333;font-family:Verdana}#c{background:#F0F7E2}#r{height:10px;background:#717171}#clr{background:none;color:#575757;font-size:20px}</style>"
 
-new const szHost[32] =	"185.148.145.64"
-new const szUser[32] =	"csnation"
+new const szHost[32] =	"255.255.255.255"
+new const szUser[32] =	"mi0"
 new const szPass[32] =	"*******"
-new const szDB[32] =	"csnation"
+new const szDB[32] =	"Coins"
 
 new Handle:g_iSqlTuple
 new g_szSqlError[512]
